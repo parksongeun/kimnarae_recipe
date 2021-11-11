@@ -1,0 +1,55 @@
+body {
+    transition: 3s;
+    font-size: 32pt;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+  }
+
+.wrap{
+margin: 0 auto;
+margin-top: 36px;
+
+}
+
+#clr{
+    font-family:'Open Sans', 'Gothic A1', sans-serif;
+    transition: 3s;
+    
+}
+
+select{
+  font-family:'Open Sans', 'Gothic A1', sans-serif;
+  width: 640px;
+  /* margin: 0 auto; */
+    padding: 0.6rem 0.6rem;
+    font-size: 12pt;
+    text-decoration: none;
+    border: 1px solid;
+    text-align: center; 
+    border-radius: 100px;
+  -webkit-appearance: none;                                 
+    -moz-appearance: none;
+    appearance: none;
+    transition: 3s;
+  font-size: 24pt;
+}
+
+
+
+option{
+  padding: 0.6rem 0.6rem;
+  font-family:'Open Sans', 'Gothic A1', sans-serif;
+}
+
+
+.wrap a {
+  text-align: center;
+  color: white;
+  position: absolute;
+  font-family:'Open Sans', 'Gothic A1', sans-serif;
+}
+
+.layer { display: none; }

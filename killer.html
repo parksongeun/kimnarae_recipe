@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>킬러</title>
+    <meta name="description" content="Secret recipe">
+    <meta name="keywords" content="Secret recipe">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+  </head>
+
+    <style>
+        body {
+      font-family: 'Black And White Picture', sans-serif;
+      background-color: black;
+      font-size: 20px;
+      color: white;
+      }
+
+      span {
+        position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%,-50%);
+
+      }
+
+      p{
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+p:nth-child(2){
+    white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type2 8s steps(120, end);
+}
+
+
+p:nth-child(3){
+  animation: type2 13s steps(140, end);
+}
+
+
+
+
+
+
+
+p a{
+  color: lime;
+  text-decoration: none;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+       
+       </style>
+
+    
+
+
+
+
+  <body>
+      <center>
+        <span>
+        <p>사람들이 왜 그렇게 다른 이들을 죽이고 싶어 하는지 나는 잘 모르겠다</p>
+        <p>하지만 사람들이 끊임없이 우릴 찾는 걸 보면</p>
+        <p>지금 이 세상엔 우리가 필요한 것만은 분명하다</p>
+    </span>
+    </center>
+
+
+  </body>
+  </html>

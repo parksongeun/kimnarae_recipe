@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한탄</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        #code_html, #code_direct, #code_reddit{
+            display: none;
+            
+        }
+
+        body{
+            line-height: 1.5;
+            background-color: LightGray;
+    font-family:'Open Sans', 'Gothic A1', sans-serif;
+    
+        }
+
+     button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    padding:0.3rem 0.6rem;
+    font-size: 10pt;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid;
+    background-color: white;
+    /* border-radius: 24px; */
+}
+    input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    padding:0.2rem 0.4rem;
+    font-size: 10pt;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid;
+    background-color: white;
+    /* border-radius: 24px; */
+}
+
+input:hover{
+    opacity: 0.7;
+}
+
+.wrap{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: white; */
+    line-height: 1.3;
+    padding: 36px;
+    background-color: white;
+
+}
+    
+        </style>
+
+</head>
+<body>
+<div class="wrap">
+    소설가의 자취방 / 밤
+    <br>
+    <br>
+    <br>
+우울한 분위기의 자취방 안. 
+<br>
+화가는 소맥을 들이키고,소설가는 취했는지 머리를 흔들고 있다.
+<br>
+<br>
+소설가: 
+<input id="code_html" type="text" value=" 야…. 너는 요즘 잘 되냐? 나는 이 길이 맞는지도 모르겠다." autocomplete="off" readonly="">
+<input type="button" value="대사 듣기"/>
+
+<br>
+
+    (소설가가 고개를 숙인다.)
+    <br>
+    <br>
+    화가:
+    <input id="code_direct" type="text" value="글쎄, 대학 다닐 때 만에도 꿈과 희망에 차있었는데, 막상 현실하고 부딪히니 몸도 마음도 견디기가 힘들다." autocomplete="off" readonly="">
+    <input type="button" value="대사 듣기"/>
+    <br>
+    (화가, 미간을 찌푸리며 천장을 바라본다.)
+    <br>
+    <br>
+    소설가:
+    <input id="code_reddit" type="text" value="맞아 오죽하면 사서 하는 고생이라 하잖냐. 다들 어릴 땐 순수 문학한다니, 내가 진정한 문학을 한다니 이러다가 결국 다들 돈 되는 웹 소설로 빠지고…
+
+    " autocomplete="off" readonly="">
+    <input type="button" value="대사 듣기"/>
+    <br>
+    <br>
+    화가:
+    <input id="code_direct" type="text" value="야 우리도 그래. 순수 미술 하다가 학원 다녀서 원화가로 빠지는 애들 많더라. 
+근데 그것도 잘해야지…. 웹 소설도 그렇고 성공해야 돈 벌지…. 물론 “순수”한 예술 한다는 우리보단 지갑 사정이 훨씬 낫겠지만. 하여간 나도 원화가 말고 나만의 예술이 하고 싶은데…. 시대에 뒤처졌다. 이런 소리 말고 우리만의 목표! 철학! 이 있다고 생각하자. 안 그럼 이 짓도 못해." autocomplete="off" readonly="">
+    <input type="button" value="대사 듣기"/>
+    <br>
+    <br>
+    소설가: <input id="code_direct" type="text" value="그냥 요즘엔 아무것도 생각하기 싫어져. 이게 우울증인가. 우울하면 글이 더 잘 나온다는 데 그거 다 헛소리야. 멍청해지는 느낌이 드는데. 차라리 그게 사실이라면 나는 더더욱 우울해지고 싶다.
+    " autocomplete="off" readonly="">
+        <input type="button" value="대사 듣기"/>
+        <br>
+        <br>
+        화가:
+        <input id="code_direct" type="text" value="완전히 미치지 않고서야 작품이 더 잘 나오진 않는 거 같다. 무기력만 하지. 
+        " autocomplete="off" readonly="">
+        <input type="button" value="대사 듣기"/>
+        <br>
+        (둘이 눈을 마주하며 동시에 한숨을 쉰다.)
+        <br>
+        <br>
+        소설가:
+        <input id="code_reddit" type="text" value=" …. 짠 이나 하자.
+        " autocomplete="off" readonly="">
+        <input type="button" value="대사 듣기"/>
+        <br>
+        <br>
+        화가:
+        <input id="code_direct" type="text" value="그래….
+        " autocomplete="off" readonly="">
+        <input type="button" value="대사 듣기"/>
+        <br>
+        (둘이 술잔을 부딪힌다.)
+
+    </div>
+
+    <button type="button" onclick="location.href='main.html' "
+    style="display: scroll; position: fixed; bottom: 30px; right: 30px;"
+    rel="nofollow"
+    onfocus='this.blur()'
+    >
+    다른 에피소드 만들기
+    </button>
+    
+    <script>
+    var voices = [];
+    function setVoiceList() {
+    voices = window.speechSynthesis.getVoices();
+    }
+    setVoiceList();
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+    window.speechSynthesis.onvoiceschanged = setVoiceList;
+    }
+    function speech(txt) {
+    if(!window.speechSynthesis) {
+    alert("음성 재생을 지원하지 않는 브라우저입니다. 크롬, 파이어폭스 등의 최신 브라우저를 이용하세요");
+    return;
+    }
+    var lang = 'ko-KR';
+    var utterThis = new SpeechSynthesisUtterance(txt);
+    utterThis.onend = function (event) {
+    console.log('end');
+    };
+    utterThis.onerror = function(event) {
+    console.log('error', event);
+    };
+    var voiceFound = false;
+    for(var i = 0; i < voices.length ; i++) {
+    if(voices[i].lang.indexOf(lang) >= 0 || voices[i].lang.indexOf(lang.replace('-', '_')) >= 0) {
+    utterThis.voice = voices[i];
+    voiceFound = true;
+    }
+    }
+    if(!voiceFound) {
+    alert('voice not found');
+    return;
+    }
+    utterThis.lang = lang;
+    utterThis.pitch = 1;
+    utterThis.rate = 1; //속도
+    window.speechSynthesis.speak(utterThis);
+    }
+   
+
+
+    document.addEventListener("click", function(e) {
+    var t = e.target;
+    var input = t.previousElementSibling;
+    speech(input.value);
+    });
+
+    
+
+    </script>
+    
+
+</body>
+</html>

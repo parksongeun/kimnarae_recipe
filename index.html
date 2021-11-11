@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secret episode recipe</title>
+    <meta http-equiv="refresh" content="10;url=main.html">
+    <meta name="description" content="Secret recipe">
+    <meta name="keywords" content="Secret recipe">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+  </head>
+
+    <style>
+
+body {
+    transition: 3s;}
+
+    #clr{
+    transition: 3s;
+    
+}
+        body {
+          font-family: 'Noto Sans KR', sans-serif;
+          margin: 100px auto;
+
+        }
+
+        p {
+         text-shadow: -1px 0 Black, 0 1px Black, 1px 0 Black, 0 -1px Black;
+        }
+
+
+        span {
+          font-size: 60px;
+          color: white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          margin:0 auto;
+          line-height: 2px;
+
+        }
+
+        .one {
+          font-size: 200px;
+
+        }
+
+      </style>
+
+  <body>
+    <div id="clr">
+      <center>
+        <span>
+        <p>Secret episode recipe</p>
+        <p class="one">🕹</p>
+      </span>
+          
+    </center>
+  </div>
+
+
+    <script type="text/javascript">
+ var color_text= document.getElementById('clr');
+      var color_ary = new Array('LightYellow','black','CornflowerBlue','MediumSpringGreen','Linen','LightGray'); // array of 10 colors
+    function colr(){
+        //ptxt.style.color = color_ary[ Math.round ( Math.random() * color_ary.length ) ];
+        color_text.style.color = color_ary[ Math.ceil ( Math.random() * color_ary.length ) ];
+        document.bgColor = color_ary[ Math.floor ( Math.random() * color_ary.length ) ];
+        setTimeout('colr()', 3000);	
+    }
+    window.addEventListener('onload', colr());
+    
+        </script>
+       
+
+  </body>
+  </html>

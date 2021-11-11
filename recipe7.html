@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700;900&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>Secret recipe</title>
+
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/recipestyle7.css" />
+
+    <style>
+        audio {display:none;}
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- emoji -->
+
+<div class="wrap">
+        <div class="emo">
+            <div id="emo_1">💕</div>
+            <div id="emo_2">🍭</div>
+            <div id="emo_3">💧</div>
+            <div id="emo_4">🤬</div>
+            <div id="emo_5">🎂</div>
+            <div id="emo_6">👭</div>
+            <div id="emo_7">📝</div>
+            <div id="emo_8">💕</div>
+        </div>
+        <div class="emo">
+            <div id="emo_9">🥑</div>
+            <div id="emo_10">🤯</div>
+            <div id="emo_11">💕</div>
+            <div id="emo_12">🐹</div>
+            <div id="emo_13">🍺 </div>
+            <div id="emo_14">🌧</div>
+            <div id="emo_15">🐹</div>
+            <div id="emo_16">👭</div>
+    </div>
+
+
+    <!-- form -->
+    <form action="">
+        <input placeholder="따뜻한 위로">
+        <button onclick="divid.style.display='block';">넣기</button>
+    </form>
+
+</div>
+
+
+    <!-- bowl -->
+    <div id="div1">
+        <p id="result"></p>
+        <img src="img/plate.png">
+    </div>
+
+
+
+    <!-- finish button -->
+    <div id='divid' style='display:none;'>
+        <button type="button" onclick="window.open('episode7.html'), play()" target="blank" >완성하기</button>
+    </div>
+
+
+
+    <!-- recipe -->
+    <div class="recipe">
+        <h1> 레시피 </h1>
+        <p>
+            1. 생일 케이크가 하나
+            <br>
+            2. 편지지도 하나
+            <br>
+            3. 둘도 없는 단짝 친구 한 스푼
+            <br>
+            4. 서로를 향한 사랑이 세 스푼 
+            <br>
+            5. 따뜻한 위로의 한 마디
+            
+           
+        </p>
+    </div>
+
+
+
+
+
+    <audio id="audio" src="finish.mp3"></audio>
+
+
+
+ <!-- javascript -->
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+   <script>
+    //    drag and drop
+       $( document ).ready(function() {
+           $('#emo_1').draggable();           
+           $('#emo_2').draggable();
+           $('#emo_3').draggable();           
+           $('#emo_4').draggable();
+           $('#emo_5').draggable();  
+           $('#emo_6').draggable();
+           $('#emo_7').draggable();  
+           $('#emo_8').draggable();  
+           $('#emo_9').draggable();  
+           $('#emo_10').draggable(); 
+           $('#emo_11').draggable();  
+           $('#emo_12').draggable();
+           $('#emo_13').draggable();  
+           $('#emo_14').draggable(); 
+           $('#emo_15').draggable();  
+           $('#emo_16').draggable();    
+         });
+           
+    // form
+    const locationForm = document.querySelector('form')
+    const search = document.querySelector('input')
+    const messageOne = document.querySelector('#result')
+    
+    locationForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+        const location = search.value
+        messageOne.textContent = location
+ 
+})
+
+function play(){
+        var audio = document.getElementById("audio");
+        audio.play();
+    }
+
+
+</script>
+    
+</body>
+</html>

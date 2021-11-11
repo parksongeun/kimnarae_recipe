@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Gothic+A1:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <title>Secret recipe</title>
+    
+    <style>
+
+body {
+    transition: 3s;}
+
+    #clr{
+    transition: 3s;
+    
+}
+   
+           .text{
+               margin: 0 auto;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family:'Open Sans', 'Gothic A1', sans-serif;
+                font-size:48pt;
+                font-weight: bold;
+                line-height: 1.5;
+               
+           }
+       
+
+    </style>
+    
+</head>
+<body>
+    <div class="wrap">
+        <div id="clr">
+   <div class="text">
+    
+
+    Secret recipe
+   </div>
+</div>
+
+</div>
+
+
+<script type="text/javascript">
+
+
+
+
+
+    var color_text= document.getElementById('clr');
+    var color_ary = new Array('LightYellow','black','CornflowerBlue','MediumSpringGreen','Linen','LightGray'); // array of 10 colors
+  function colr(){
+      //ptxt.style.color = color_ary[ Math.round ( Math.random() * color_ary.length ) ];
+      color_text.style.color = color_ary[ Math.ceil ( Math.random() * color_ary.length ) ];
+      document.bgColor = color_ary[ Math.floor ( Math.random() * color_ary.length ) ];
+      setTimeout('colr()', 3000);	
+  }
+  window.addEventListener('onload', colr());
+  
+      </script>
+</body>
+</html>

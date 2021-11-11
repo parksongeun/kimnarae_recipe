@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Secret recipe</title>
+
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script> 
+    
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+
+    
+</head>
+<body>
+  <div class="wrap">
+    <div id="clr">
+
+        <div class="form-group col-sm-5">
+            
+            <select class="form-control" id="addressKindU" name="addressKindU" onchange="addressKindChange(this)">
+              <option>여러가지 조율하고 능력있는 소설가</option>
+              <!-- <option value="main_1.html">서울</option>
+              <option value="main_2.html">경기도</option>
+              <option value="main_3.html">충청남도</option> -->
+            </select>
+          </div>
+          <br>
+       
+          <div class="form-group col-sm-4">
+    
+            <select class="form-control" id="addressKindD" name="addressKindD"  onchange="location.href=this.value">
+              <option selected="selected">--인물을 선택해 주세요--</option>
+              <option value="recipe6.html"> 작게 살짝 부재중인 화가</option>
+              <option value="recipe2.html"> 승리하고 놀기 좋아하고 해방된 직장인</option>
+        
+            
+            </select>
+          </div>
+     </div>
+
+    
+
+
+    <script type="text/javascript">
+
+
+
+
+
+  var color_text= document.getElementById('clr');
+var color_ary = new Array('LightYellow','black','CornflowerBlue','MediumSpringGreen','Linen','LightGray'); // array of 10 colors
+function colr(){
+	//ptxt.style.color = color_ary[ Math.round ( Math.random() * color_ary.length ) ];
+	color_text.style.color = color_ary[ Math.ceil ( Math.random() * color_ary.length ) ];
+	document.bgColor = color_ary[ Math.floor ( Math.random() * color_ary.length ) ];
+	setTimeout('colr()', 3000);	
+}
+window.addEventListener('onload', colr());
+
+    </script>
+</body>
+</html>
